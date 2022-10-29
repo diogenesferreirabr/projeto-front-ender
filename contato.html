@@ -1,0 +1,129 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/pricing/">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"rel="stylesheet"/>
+    <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Contato</title>
+  </head>
+
+<body>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm back">
+    <img  src="img/logo.png" alt="logo" width="90px">
+    <h5 class="my-0 mr-md-auto font-weight-normal badge-pill badge-dark bolder">The FrontEnders</h5>
+      <nav class="my-2 my-md-0 mr-md-3 navtext">
+        <a class="p-2 text-white bolder" href="index.html">Inicio</a>
+        <a class="p-2 text-white bolder" href="servicos.html">Serviços</a>
+        <a class="p-2 text-white bolder" href="contato.html">Cadastro</a>
+        <a class="p-2 text-white bolder" href="equipe.html">Equipe</a>
+        <a class="btn btn-outline-light" href="login.html">Login</a>
+      </nav>
+  </div>
+<!-- -------------- NAVEGADOR --------------- -->
+
+
+<!-- ------------------------------------CONTEUDO----------------------------- -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fonte" style="font-size: 60px;">Cadastro</h1>
+      <p class="lead"></p>
+</div>
+
+<div class="container col-md-6 texto">
+    <form method="get" action="contato.html">
+        <div class="form-row" >
+              <div class="form-group col-md-6" id="form-user">
+                <label>Usuario</label>
+                <input type="text" class="form-control" id="usuario" required >
+              </div>
+              <div class="form-group col-md-6" id="form-mail">
+                <label>Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="form-group col-md-6" id="form-pass">
+                <label>Senha</label>
+                <input type="password" class="form-control" id="password"  required>
+              </div>
+              <div class="form-group col-md-6" id="form-conf-pass">
+                <label>Confirmar Senha</label>
+                <input type="password" class="form-control" id="confirm_password"  required>
+              </div>
+              <div class="form-group col-md-6" id="form-rg">
+                  <label>RG</label>
+                  <input type="number" class="form-control" id="rg" maxlength="7" required>
+              </div>
+              <div class="form-group col-md-6" id="form-cpf">
+                <label>CPF</label>
+                <input type="number" class="form-control" id="cpf" maxlength="11" required>
+            </div>
+          <div class="form-group col-md-3" id="form-cep">
+              <label>Cep:
+              <input name="cep" class="form-control" type="text" id="cep"  maxlength="9" onblur="pesquisacep(this.value);"  required /></label><br />
+          </div>
+          <div class="form-group col-md-4" id="form-rua" >
+              <label>Rua:
+              <input name="rua" class="form-control" type="text" id="rua" size="40" readonly /></label><br />
+          </div>
+          <div class="form-group col-md-5" id="form-bairro">
+              <label>Bairro:
+              <input name="bairro"  class="form-control" type="text" id="bairro" size="45" readonly /></label><br />
+          </div>
+          <div class="form-group col-md-5" id="form-city">
+              <label>Cidade:
+              <input name="cidade" class="form-control" type="text" id="cidade" size="40" readonly /></label><br />
+          </div>
+          <div class="form-group col-md-4" id="form-uf">
+              <label>Estado:
+              <input name="uf" class="form-control"type="text" id="uf" size="25" readonly /></label><br />
+          </div>
+          <div class="form-group col-md-3" id="form-ibge">
+              <label>IBGE:
+              <input name="ibge" class="form-control" type="text" id="ibge" size="22" readonly /></label><br />
+          </div>
+      </div>
+        <button type="submit" style="width: 160px;" id="btn" class="btn btn-primary">Enviar</button>
+    </form>
+</div> 
+
+<div class=" container pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center ">
+  <div class="card">
+    <h5 class="card-header"><span>Ligue para nós </span></h5>
+    <div class="card-body">
+      <h5 class="card-title">Entre em contato com nossa equipe de vendas</h5>
+      <p class="card-text">Disponível de segunda a sexta-feira, das 8h às 18h (Horário de Brasília) no telefone 0800-724-8154</p>
+    </div>
+ </div>
+ </div>
+
+
+<!-- ------------------------------------CONTEUDO----------------------------- -->
+
+
+<!-- ------------------------------FOOTER-------------------- -->
+<div class="b-example-divider bg-black">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span class="text-white bolder">&copy; 2022 TheFrontEnders, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/"><img src="img/fb.png" width="24px" height="auto"></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/"><img src="img/inst.png" width="22px" height="auto"></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://twitter.com/"><img src="img/tt.png" width="25px" height="auto"></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://web.whatsapp.com"><img src="img/wpp.png" width="25px" height="auto"></a></li>
+    </ul>
+  </footer>
+</div>
+<!-- ------------------------------FOOTER-------------------- -->
+<script src="js/viacep.js"></script>
+<script src="js/password.js"></script>
+<script src="js/salvar.js"></script>
+<script src="js/util.js"></script>
+</body>
+</html>

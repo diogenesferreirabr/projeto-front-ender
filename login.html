@@ -1,0 +1,65 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/estilo-login.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/pricing/">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"rel="stylesheet"/>    
+    <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm back">
+      <img  src="img/logo.png" alt="logo" width="90px">
+      <h5 class="my-0 mr-md-auto font-weight-normal badge-pill badge-dark bolder">The FrontEnders</h5>
+        <nav class="my-2 my-md-0 mr-md-3 navtext">
+          <a class="p-2 text-white bolder" href="index.html">Inicio</a>
+          <a class="p-2 text-white bolder" href="servicos.html">Serviços</a>
+          <a class="p-2 text-white bolder" href="contato.html">Cadastro</a>
+          <a class="p-2 text-white bolder" href="equipe.html">Equipe</a>
+          <a class="btn btn-outline-light" href="login.html">Login</a>
+        </nav>
+    </div>
+<!-- -------------- NAVEGADOR --------------- -->
+
+
+  <body>
+    <form class="form-signin texto">
+      <img src="img/login.png" alt="" width="72" height="72"> 
+      <h1>Login</h1> 
+      <input type="text" class="form-control" placeholder="Usuario" name="login" required> <br>
+      <label for="inputPassword"></label> <br>
+      <input type="password" class="form-control" placeholder="Senha" name="senha" required>
+      <div class="checkbox mb-3"></div></div><br>
+      <a class="recuperacao" href="recuperacao.html">Esqueceu sua Senha?</a> <br>  <br>
+      <button class="botao" type="button" onclick="Login()">Entrar</button><br>
+      <a href="index.html">Voltar ao Inicio</a>
+    </form>
+
+
+    <!-- ------------------------------FOOTER-------------------- -->
+  <div class="b-example-divider bg-black" style="margin-top: 150px;">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span class="text-white bolder">&copy; 2022 TheFrontEnders, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/"><img src="img/fb.png" width="24px" height="auto"></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/"><img src="img/inst.png" width="22px" height="auto"></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://twitter.com/"><img src="img/tt.png" width="25px" height="auto"></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://web.whatsapp.com"><img src="img/wpp.png" width="25px" height="auto"></a></li>
+    </ul>
+  </footer>
+</div>
+    <script src="js/login.js"></script>
+  </body>
+</html>
